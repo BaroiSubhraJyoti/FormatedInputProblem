@@ -1,0 +1,21 @@
+{
+  "name": "vite-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "open": "cypress open",
+    "test:e2e": "cypress run",
+    "test": "concurrently --kill-others \"npm run dev\" \"npm run test:e2e\""
+  },
+  "devDependencies": {
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "cypress": "^12.16.0"
+  }
+}
